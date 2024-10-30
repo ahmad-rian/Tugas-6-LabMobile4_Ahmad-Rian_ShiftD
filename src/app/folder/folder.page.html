@@ -1,21 +1,89 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>inbox</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding main-content">
+  <!-- Profile Section -->
+  <div class="section-container">
+    <h2 class="section-title">Student Profile</h2>
+    
+    <div class="profile-content">
+      <ion-avatar class="profile-avatar">
+        <img src="assets/img/formal.jpg" alt="Profile Picture" />
+      </ion-avatar>
+      
+      <div class="profile-info">
+        <h2>Ahmad Rian Syaifullah</h2>
+        <p class="nim">NIM: H1D022016</p>
+      </div>
+      
+      <div class="student-badge">
+        <ion-icon name="school-outline"></ion-icon>
+        <span>Informatics Student</span>
+      </div>
+    </div>
+  </div>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Skills Section -->
+  <div class="section-container">
+    <h2 class="section-title">Skills & Expertise</h2>
+    
+    <div class="skills-content">
+      <div class="skill-item">
+        <div class="skill-header">
+          <span>Ionic Framework</span>
+          <span class="skill-percentage">70%</span>
+        </div>
+        <ion-progress-bar value="0.7" class="skill-progress"></ion-progress-bar>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span>Angular</span>
+          <span class="skill-percentage">60%</span>
+        </div>
+        <ion-progress-bar value="0.6" class="skill-progress"></ion-progress-bar>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span>TypeScript</span>
+          <span class="skill-percentage">80%</span>
+        </div>
+        <ion-progress-bar value="0.8" class="skill-progress"></ion-progress-bar>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section-container">
+    <h2 class="section-title">Contact Information</h2>
+    
+    <div class="contact-content">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="contact-details">
+          <h3>Email</h3>
+          <p>ahmad.ritonga&#64;mhs.unsoed.ac.id</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+        <div class="contact-details">
+          <h3>Location</h3>
+          <p>Purwokerto, Indonesia</p>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>

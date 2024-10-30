@@ -1,28 +1,171 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
+// Global styles
+.main-content {
+  --background: #ffffff;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
 }
 
-#container {
+// Section Container
+.section-container {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 24px 0;
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+// Profile Section
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  
+  img {
+    border-radius: 50%;
+    border: 3px solid #3880ff;
+  }
 }
 
-#container a {
-  text-decoration: none;
+.profile-info {
+  h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .nim {
+    color: #888888;
+    margin: 8px 0;
+    font-size: 0.9rem;
+  }
+}
+
+.student-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(56, 128, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-top: 16px;
+  
+  ion-icon {
+    color: #3880ff;
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  span {
+    color: #3880ff;
+    font-size: 0.9rem;
+  }
+}
+
+// Skills Section
+.skills-content {
+  .skill-item {
+    margin-bottom: 20px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    
+    span {
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+    
+    .skill-percentage {
+      color: #3880ff;
+    }
+  }
+  
+  .skill-progress {
+    height: 8px;
+    border-radius: 4px;
+    --progress-background: #3880ff;
+    --buffer-background: rgba(56, 128, 255, 0.1);
+  }
+}
+
+// Contact Section
+.contact-content {
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .contact-icon {
+    background: rgba(56, 128, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    margin-right: 16px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    ion-icon {
+      color: #3880ff;
+      font-size: 1.3rem;
+    }
+  }
+  
+  .contact-details {
+    h3 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    
+    p {
+      color: #888888;
+      margin: 4px 0 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3880ff;
+  border-radius: 4px;
 }
