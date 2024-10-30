@@ -18,6 +18,6 @@ SHIFT BARU : D
 ## SCREENSHOTS
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
-  <img src="assets/img/first.png" alt="landing" style="width: 48%; max-width: 300px;"/>
-  <img src="assets/img/second.png" alt="sidebar" style="width: 48%; max-width: 300px;"/>
+  <img src="src/assets/img/first.png" alt="landing" style="width: 48%; max-width: 300px;"/>
+  <img src="src/assets/img/second.png" alt="sidebar" style="width: 48%; max-width: 300px;"/>
 </div>
